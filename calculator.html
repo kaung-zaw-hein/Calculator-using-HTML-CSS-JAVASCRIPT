@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <p name="display" class="display"></p> 
+            <div class="valuecontainer">
+                <div class="number">
+                    <button class="button" value="7" onclick="clickbtn(7); unblk()">7</button>
+                    <button class="button" value="8" onclick="clickbtn(8); unblk()">8</button>
+                    <button class="button" value="9" onclick="clickbtn(9); unblk()">9</button>
+                    <button class="button" value="4" onclick="clickbtn(4); unblk()">4</button>
+                    <button class="button" value="5" onclick="clickbtn(5); unblk()">5</button>
+                    <button class="button" value="6" onclick="clickbtn(6); unblk()">6</button>
+                    <button class="button" value="1" onclick="clickbtn(1); unblk()">1</button>
+                    <button class="button" value="2" onclick="clickbtn(2); unblk()">2</button>
+                    <button class="button" value="3" onclick="clickbtn(3); unblk()">3</button>
+                    <button class="button" value="0" onclick="clickbtn(0); unblk()">0</button>
+                    <button class="button" value="00" onclick="clickbtn(00); unblk()">00</button>
+                    <button class="button" value="."onclick="clickbtn('.'); unblk()">.</button>
+                </div>
+                <div class="sign">
+                    <button class="signbtn power" onclick="clickbtn('ON/OFF')">ON/OFF</button>
+                    <button class="signbtn "  onclick="clickbtn('DEL'); unblk()">DEL</button> 
+                    <button class="signbtn "  onclick="clickbtn('/'); blockbtn()">÷</button>
+                    <button class="signbtn "  onclick="clickbtn('*'); blockbtn()">×</button>
+                    <button class="signbtn "  onclick="clickbtn('%'); blockbtn()">%</button>
+                    <button class="signbtn "  onclick="clickbtn('-'); blockbtn()">-</button>
+                    <button class="signbtn " onclick="clickbtn('+'); blockbtn()" >+</button>
+                    <button class="signbtn" onclick="clickbtn('='); unblk()">=</button>
+                </div>
+            
+            </div>
+            <div class= "block"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
